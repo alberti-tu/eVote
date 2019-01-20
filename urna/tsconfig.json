@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "module": "commonjs",
+      "noUnusedLocals": true,
+      "outDir": "./build",
+      "esModuleInterop": true,
+      "declaration": true,
+      "sourceMap": true,
+      "lib": [
+        "dom",
+        "es6",
+        "dom.iterable",
+        "scripthost"
+      ]
+    },
+    "include": [
+      "./src",
+      "./test"
+    ]
+  }

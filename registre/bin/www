@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+let app = require('../app');
+let https = require('https');
+let fs = require ('fs');
+
+const options ={
+    key: fs.readFileSync(__dirname+'/../tls/server.key'),
+    cert: fs.readFileSync(__dirname+'/../tls/server.cert')
+}
+
+let server = https.createServer(options, app);
+
+server.listen(3000);
+
+
